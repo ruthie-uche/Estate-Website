@@ -127,6 +127,13 @@ h2 {
     transform: scale(1.1);
 }
 
+/* footer */
+footer{
+    text-align: center;
+    background-color: #007BFF;
+    padding: 10px;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -167,4 +174,47 @@ body.dark-mode button#theme-toggle {
 
 body.dark-mode button#theme-toggle:hover {
     background-color: #777777;
+}
+
+body.dark-mode footer{
+    background-color: #555555;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .properties {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .property img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact input, .contact textarea {
+        width: 95%;
+    }
+
+    button#theme-toggle, .animated-button {
+        width: 90%;
+        padding: 15px;
+        font-size: 16px;
+    }
 }
