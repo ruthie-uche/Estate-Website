@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img.company-logo {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button#theme-toggle {
+    background-color: #FF4500;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#theme-toggle:hover {
+    background-color: #FF6347;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #007BFF;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about p {
+    text-align: center;
+}
+
+/* Properties Section */
+.properties {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    object-fit: cover;
+    gap: 10px;
+}
+
+.property {
+    margin: 8.5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.property img {
+    width: 300px;
+    height: 200px;
+}
+
+.property:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+.animated-button {
+    background-color: #FF4500;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+    background-color: #FF6347;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #555555;
+}
+
+body.dark-mode .property img {
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode button#theme-toggle {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+body.dark-mode button#theme-toggle:hover {
+    background-color: #777777;
+}
