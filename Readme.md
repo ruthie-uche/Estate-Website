@@ -15,3 +15,5 @@ The Estate Website is a responsive web application showcasing real estate proper
 - **CSS:** Styling and animations.
 - **JavaScript:** Theme toggle functionality.
 
+## Project Creator:
+**Ruth Uche**
